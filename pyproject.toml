@@ -1,0 +1,16 @@
+[project]
+name = "py-me"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = []
+
+[tool.uv.build-backend]
+module-name = "marketsimulator"
+module-root = ""
+
+[dependency-groups]
+dev = [
+    "pytest<8",
+]

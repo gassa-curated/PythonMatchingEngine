@@ -1,0 +1,7 @@
+seq,timestamp,event_type,client_order_id,native_order_id,order_type,side,qty,price,trigger_price,trigger_direction,time_in_force,post_only,status,reason,pre_leaves_qty,post_leaves_qty,traded_qty,canceled_qty,linked_order_id
+0,2019-05-23T09:00:00,submit,ask-1,1,limit,sell,100,10.0,,,GTC,False,active,,,100,0,0,
+1,2019-05-23T09:00:01,submit,ask-2,2,limit,sell,50,10.0,,,GTC,False,active,,,50,0,0,
+2,2019-05-23T09:00:02,submit,buy-post,,limit,buy,10,10.0,,,GTC,True,rejected,post_only_would_cross,,,0,0,
+3,2019-05-23T09:00:03,submit,buy-fok,3,limit,buy,150,10.0,,,FOK,False,filled,,,0,150,0,
+4,2019-05-23T09:00:04,submit,bid-day,4,limit,buy,80,9.5,,,DAY,False,active,,,80,0,0,
+5,2019-05-23T09:00:05,submit,sell-ioc,5,limit,sell,100,9.5,,,IOC,False,partially_filled_canceled,,,0,80,20,

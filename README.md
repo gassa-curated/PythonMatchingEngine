@@ -279,3 +279,13 @@ Our execution was done 20 ms after the price first showed
 ```
 
 Please check jupyter notebooks in ./examples for more examples of how to use it
+
+# UV Setup
+
+```sh
+uv sync
+uv pip install "setuptools<58.0.0" "wheel<0.38.0"
+# enable notebook, this is a really old fashio for jupter notebook
+uv pip install "notebook<7.0.0" ipykernel
+uv pip install -r dockerfiles/requirements.txt --override uv_overrides.txt
+```

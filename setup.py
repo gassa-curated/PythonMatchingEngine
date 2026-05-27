@@ -1,6 +1,6 @@
 import io
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 def readme():
     with io.open('README.md', encoding='utf-8') as f:
@@ -16,7 +16,8 @@ setup(
                  for HFT trading strategies",
     long_description_content_type="text/markdown",
     url="https://github.com/Surbeivol/PythonMatchingEngine",
-    packages=find_packages(),
+    packages=["marketsimulator", "config", "examples", "extensions"],
+    package_data={"config": ["*.yml"]},
     install_requires=[
         'cycler==0.10.0',
         'kiwisolver==1.1.0',
@@ -32,9 +33,8 @@ setup(
     ],
     include_package_data=True,
     classifiers=[
-        "Programmin Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.6",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
 )
-

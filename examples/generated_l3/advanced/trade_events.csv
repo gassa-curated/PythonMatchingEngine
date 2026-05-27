@@ -1,0 +1,4 @@
+seq,trade_seq,timestamp,price,qty,aggressor_native_order_id,aggressor_client_order_id,passive_native_order_id,passive_client_order_id,aggressor_side,passive_side,aggressor_remaining_qty,passive_remaining_qty
+3,0,2019-05-23T09:00:03,10,100,3,buy-fok,1,ask-1,buy,sell,50,0
+3,1,2019-05-23T09:00:03,10,50,3,buy-fok,2,ask-2,buy,sell,0,0
+5,2,2019-05-23T09:00:05,9.5,80,5,sell-ioc,4,bid-day,sell,buy,20,0
